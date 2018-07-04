@@ -10,9 +10,12 @@ RUN apt-get update && \
                         cups-pdf \
             			python-cups \
                         whois \
-                        libcups2
+                        libcups2 \
+                        make
 
 COPY rootfs /
+
+RUN /hplip.sh
 
 VOLUME /etc/cups/
 VOLUME /var/log/cups

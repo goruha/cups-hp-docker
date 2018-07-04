@@ -22,6 +22,7 @@ BUILD_DEPS="\
     libsnmp-dev \
     libssl-dev \
     libusb-1.0-0-dev \
+    g++ \
     python-dev"
 
 DEPS="\
@@ -42,8 +43,10 @@ DEPS="\
     libcupsimage2 \
     libcupsimage2-dev \
     sane \
-    sane-devel \
+    sane-utils \
     libsane-dev \
+    libjpeg-dev \
+    make \
     wget"
 
 
