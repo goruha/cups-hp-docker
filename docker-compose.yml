@@ -12,10 +12,8 @@ services:
       - "631:631/tcp"
       - "631:631/udp"
     volumes:
-      - ./data/cups:/etc/cups
       - ./data/logs:/var/log/cups
       - ./data/spool:/var/spool/cups
       - ./data/cache:/var/cache/cups
       - /var/run/dbus:/var/run/dbus
     privileged: true
-    network_mode: host
