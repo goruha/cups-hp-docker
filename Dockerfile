@@ -9,7 +9,8 @@ RUN apt-get update && \
                         cups \
                         cups-pdf \
             			python-cups \
-                        whois
+                        whois \
+                        libcups2
 
 COPY rootfs /
 
