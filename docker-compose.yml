@@ -17,4 +17,3 @@ services:
       - ./data/spool:/var/spool/cups
       - ./data/cache:/var/cache/cups
     privileged: true
-    

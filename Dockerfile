@@ -18,8 +18,6 @@ VOLUME /var/cache/cups
 
 EXPOSE 631
 
-ADD start.sh /start.sh
-
-RUN chmod +x /start.sh
+COPY rootfs /
 
 CMD ["/start.sh"]
