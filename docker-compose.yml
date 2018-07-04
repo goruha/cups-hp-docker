@@ -1,0 +1,20 @@
+version: '2.2'
+## We using version `2.2` because version `3` does not support cpu\mem limits for non swarm mode.
+## https://github.com/docker/compose/issues/4513
+
+services:
+  cups:
+    build: ./
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "631:631/tcp"
+      - "631:631/udp"
+    volumes:
+      - ./data/cups:/etc/cups
+      - ./data/logs:/var/log/cups
+      - ./data/spool:/var/spool/cups
+      - ./data/cache:/var/cache/cups
+    privileged: true
+    
