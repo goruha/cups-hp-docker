@@ -26,12 +26,24 @@ BUILD_DEPS="\
 
 DEPS="\
     avahi-daemon \
+    avahi-utils \
+    policykit-1 \
     dbus \
     libsnmp30 \
     libusb-1.0-0 \
     python \
     python-dbus \
     python-gobject \
+    libcups2-dev \
+    cups-bsd \
+    cups-client \
+    libtool \
+    libtool-bin \
+    libcupsimage2 \
+    libcupsimage2-dev \
+    sane \
+    sane-devel \
+    libsane-dev \
     wget"
 
 
