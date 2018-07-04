@@ -16,4 +16,6 @@ services:
       - ./data/logs:/var/log/cups
       - ./data/spool:/var/spool/cups
       - ./data/cache:/var/cache/cups
+      - /var/run/dbus:/var/run/dbus
     privileged: true
+    network_mode: host
