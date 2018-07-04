@@ -11,6 +11,8 @@ RUN apt-get update && \
             			python-cups \
                         whois
 
+COPY rootfs /
+
 VOLUME /etc/cups/
 VOLUME /var/log/cups
 VOLUME /var/spool/cups
@@ -18,6 +20,5 @@ VOLUME /var/cache/cups
 
 EXPOSE 631
 
-COPY rootfs /
 
 CMD ["/start.sh"]
