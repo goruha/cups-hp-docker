@@ -24,7 +24,7 @@ RUN apt-get update && \
                         hplib \
                         sane-utils \
                         avahi-utils \
-                        scanimage \
+                        scanimage
 
 COPY rootfs /
 
