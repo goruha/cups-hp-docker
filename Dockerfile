@@ -14,17 +14,15 @@ RUN apt-get update && \
                         libcups2-dev \
                         python3-dev \
                         libjpeg9 \
-                        libnetsnmp-devel \
                         libgsnmp0 \
                         libgsnmp0-dev \
                         libssl-dev \
                         libusb-1.0-0 \
                         libpthreads-mingw-w64 \
                         libcupsimage2 \
-                        hplib \
+                        hplip \
                         sane-utils \
-                        avahi-utils \
-                        scanimage
+                        avahi-utils
 
 COPY rootfs /
 
