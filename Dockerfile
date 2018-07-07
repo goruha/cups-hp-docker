@@ -11,11 +11,22 @@ RUN apt-get update && \
             			python-cups \
                         whois \
                         libcups2 \
-                        make
+                        libcups2-dev \
+                        python3-dev \
+                        libjpeg9 \
+                        libnetsnmp-devel \
+                        libgsnmp0 \
+                        libgsnmp0-dev \
+                        libssl-dev \
+                        libusb-1.0-0 \
+                        libpthreads-mingw-w64 \
+                        libcupsimage2 \
+                        hplib \
+                        sane-utils \
+                        avahi-utils \
+                        scanimage \
 
 COPY rootfs /
-
-RUN /hplip.sh
 
 VOLUME /etc/cups/
 VOLUME /var/log/cups
