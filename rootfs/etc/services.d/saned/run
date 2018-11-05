@@ -1,1 +1,2 @@
 #!/usr/bin/with-contenv sh
+saned -d
