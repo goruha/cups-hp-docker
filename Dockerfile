@@ -10,8 +10,6 @@ RUN apt-get update && \
                         wget \
                         cups \
                         cups-pdf \
-                        cups-devel \
-                        dbus \
                         python-cups \
                         whois \
                         libcups2 \
@@ -28,11 +26,7 @@ RUN apt-get update && \
                         sane-utils \
                         avahi-utils \
                         sane \
-                        sane-devel \
-                        libnetsnmp-devel \
-                        libjpeg \
-                        cups-image \
-                        libusb
+                        sane-devel 
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
