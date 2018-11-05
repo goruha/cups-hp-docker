@@ -15,9 +15,10 @@ services:
       - "10000-10100"
       - "6566:6566"
     volumes:
+      - hplip_lib:/var/lib/hp
       - hplip:/usr/share/hplip
-      - cups:/usr/share/cups/drv
-      - cups:/usr/share/ppd
+      - cups:/usr/share/cups
+      - ppd:/usr/share/ppd
       - ./data/logs:/var/log/cups
       - ./data/spool:/var/spool/cups
       - ./data/cache:/var/cache/cups
@@ -28,5 +29,6 @@ services:
 
 volumes:
   hplip:
+  hplip_lib:
   cups:
   ppd:
