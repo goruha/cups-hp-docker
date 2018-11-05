@@ -12,6 +12,7 @@ services:
     ports:
       - "631:631/tcp"
       - "631:631/udp"
+      - "6566:6566/tcp"
     volumes:
       - driver:/usr/share/hplip/data
       - ./data/logs:/var/log/cups
