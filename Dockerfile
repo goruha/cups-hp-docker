@@ -4,6 +4,25 @@ RUN apt-get update && \
     apt-get install -y  nano \
                         gcc \
                         libtool \
+                        libtool-bin \
+                        libdbus-1-dev \
+                        python3-pyqt4 \
+                        gtk2-engines-pixbuf \
+                        sane-utils \
+                        avahi-utils \
+                        sane \
+                        libsane-dev \
+                        libcups2-dev \
+                        cups-bsd \
+                        cups-client \
+                        libjpeg62-turbo-dev \
+                        libcupsimage2 \
+                        libcupsimage2-dev \
+                        libsnmp-dev \
+                        snmp \
+                        libusb-1.0-0-dev \
+                        g++ \
+                        libtool \
                         ca-certificates \
                         git \
                         openssl \
@@ -22,21 +41,8 @@ RUN apt-get update && \
                         libusb-1.0-0 \
                         libpthreads-mingw-w64 \
                         libcupsimage2 \
-                        hplip \
-                        sane-utils \
-                        avahi-utils \
-                        sane \
-                        libsane-dev \
-                        libcups2-dev \
-                        cups-bsd \
-                        cups-client \
-                        libjpeg62-turbo-dev \
-                        libcupsimage2 \
-                        libcupsimage2-dev \
-                        libsnmp-dev \
-                        snmp \
-                        libusb-1.0-0-dev \
-                        g++ 
+                        hplip
+
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
