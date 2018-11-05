@@ -25,7 +25,7 @@ RUN apt-get update && \
                         avahi-utils \
                         sane
 
-ENV S6_OVERLAY_VERSION=v1.21.2.2
+ENV S6_OVERLAY_VERSION=v1.21.7.0
 
 RUN curl --fail -sSL -O https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz \
     && gunzip -c s6-overlay-amd64.tar.gz | tar -xf - -C / \
