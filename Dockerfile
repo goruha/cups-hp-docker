@@ -29,10 +29,10 @@ RUN apt-get update && \
                         avahi-utils \
                         sane \
                         sane-devel \
-                        libnetsnmp-devel
+                        libnetsnmp-devel \
                         libjpeg \
                         cups-image \
-                        libusb 
+                        libusb
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
