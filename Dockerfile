@@ -26,7 +26,7 @@ RUN apt-get update && \
                         sane-utils \
                         avahi-utils \
                         sane
-                        
+
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
 RUN curl --fail -sSL -O https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-arm.tar.gz \

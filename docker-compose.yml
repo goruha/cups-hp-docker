@@ -4,6 +4,7 @@ version: '2.2'
 
 services:
   cups:
+    container_name: cups
     build: ./
     restart: always
     env_file:
