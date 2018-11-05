@@ -19,6 +19,7 @@ services:
       - hplip:/usr/share/hplip
       - cups:/usr/share/cups
       - ppd:/usr/share/ppd
+      - printers:/etc/cups
       - ./data/logs:/var/log/cups
       - ./data/spool:/var/spool/cups
       - ./data/cache:/var/cache/cups
@@ -28,6 +29,7 @@ services:
     - net.ipv6.conf.all.disable_ipv6=1
 
 volumes:
+  printers:
   hplip:
   hplip_lib:
   cups:

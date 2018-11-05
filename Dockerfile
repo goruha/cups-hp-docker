@@ -37,9 +37,8 @@ RUN adduser saned lp
 
 COPY rootfs /
 
-# /var/lib/hp/hplip.state
 VOLUME /var/lib/hp
-VOLUME /usr/share/cups/drv
+VOLUME /usr/share/cups
 VOLUME /usr/share/ppd
 VOLUME /usr/share/hplip
 VOLUME /etc/cups/
