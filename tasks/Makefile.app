@@ -15,4 +15,4 @@ app/logs/follow:
 
 ## Run init app container
 app/init:
-	$(call docker-exec, $(DOCKER_CONTAINER_APP), bash -c './init.sh')
+	$(call docker-exec, $(DOCKER_CONTAINER_APP), bash -c 'hp-setup -i')
