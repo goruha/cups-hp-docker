@@ -13,6 +13,14 @@ app/logs/follow:
 	@docker logs -f $(DOCKER_CONTAINER_APP)
 
 
-## Run init app container
-app/init:
+## Install hp drivers
+app/driver/install:
 	$(call docker-exec, $(DOCKER_CONTAINER_APP), bash -c 'hp-setup -i')
+
+## Print test page
+app/test/print:
+	$(call docker-exec, $(DOCKER_CONTAINER_APP), bash -c 'hp-testpage')
+
+## Run scan
+app/test/scan:
+	$(call docker-exec, $(DOCKER_CONTAINER_APP), bash -c 'hp-scan')
