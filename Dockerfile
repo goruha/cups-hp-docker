@@ -44,4 +44,4 @@ VOLUME /var/cache/cups
 EXPOSE 631
 
 
-CMD ["/start.sh"]
+CMD ["/init"]
