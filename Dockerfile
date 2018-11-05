@@ -8,7 +8,7 @@ RUN apt-get update && \
                         wget \
                         cups \
                         cups-pdf \
-            			python-cups \
+       			python-cups \
                         whois \
                         libcups2 \
                         libcups2-dev \
@@ -22,7 +22,8 @@ RUN apt-get update && \
                         libcupsimage2 \
                         hplip \
                         sane-utils \
-                        avahi-utils
+                        avahi-utils \
+			
 
 COPY rootfs /
 
