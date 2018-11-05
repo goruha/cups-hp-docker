@@ -2,12 +2,16 @@ FROM resin/rpi-raspbian
 
 RUN apt-get update && \
     apt-get install -y  nano \
+                        gcc \
+                        libtool \
                         ca-certificates \
                         git \
                         openssl \
                         wget \
                         cups \
                         cups-pdf \
+                        cups-devel \
+                        dbus \
                         python-cups \
                         whois \
                         libcups2 \
@@ -23,7 +27,12 @@ RUN apt-get update && \
                         hplip \
                         sane-utils \
                         avahi-utils \
-                        sane
+                        sane \
+                        sane-devel \
+                        libnetsnmp-devel
+                        libjpeg \
+                        cups-image \
+                        libusb \
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
