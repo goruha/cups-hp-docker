@@ -25,7 +25,18 @@ RUN apt-get update && \
                         hplip \
                         sane-utils \
                         avahi-utils \
-                        sane
+                        sane \
+                        libsane-dev \
+                        libcups2-dev \
+                        cups-bsd \
+                        cups-client \
+                        libjpeg62-turbo-dev \
+                        libcupsimage2 \
+                        libcupsimage2-dev \
+                        libsnmp-dev \
+                        snmp \
+                        libusb-1.0-0-dev \
+                        g++ 
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
