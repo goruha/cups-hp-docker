@@ -1,0 +1,3 @@
+#!/usr/bin/execlineb -P
+
+useradd ${CUPS_USER_ADMIN} --system -G root,lpadmin --no-create-home --password ${CUPS_USER_PASSWORD}

@@ -31,7 +31,6 @@ RUN curl --fail -sSL -O https://github.com/just-containers/s6-overlay/releases/d
     && gunzip -c s6-overlay-amd64.tar.gz | tar -xf - -C / \
     && rm s6-overlay-amd64.tar.gz
 
-RUN useradd ${CUPS_USER_ADMIN} --system -G root,lpadmin --no-create-home --password ${CUPS_USER_PASSWORD}
 RUN adduser saned lp
 
 COPY rootfs /
