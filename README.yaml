@@ -1,0 +1,36 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: "cups-hp-docker"
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: "APACHE2"
+
+# Canonical GitHub repo
+github_repo: "goruha/cups-hp-docker"
+
+# Short description of this project
+description: |-
+  Run cups and saned in docker compose on raspberry pi
+# How to use this project
+usage: |-
+  - SSH on your raspberry pi
+  - Clone repo
+  - `make`
+  - `make compose/up`
+  - `make app/driver/install`
+
+include:
+- "docs/targets.md"
+
+# Contributors to this project
+contributors:
+- name: "Igor Rodionov"
+  github: "goruha"

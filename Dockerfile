@@ -46,9 +46,9 @@ RUN apt-get update && \
 
 ENV S6_OVERLAY_VERSION=v1.21.7.0
 
-RUN curl --fail -sSL -O https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-arm.tar.gz \
-    && gunzip -c s6-overlay-arm.tar.gz | tar -xf - -C / \
-    && rm s6-overlay-arm.tar.gz
+RUN curl --fail -sSL -O https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-armhf.tar.gz \
+    && gunzip -c s6-overlay-armhf.tar.gz | tar -xf - -C / \
+    && rm s6-overlay-armhf.tar.gz
 
 RUN adduser saned lp
 
